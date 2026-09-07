@@ -1,0 +1,52 @@
+const dropdownContainers = document.querySelectorAll(".dropdown-container");
+const menuButton = document.querySelector(".menu-button");
+const closeButton = document.querySelector(".close-button");
+const menu = document.querySelector(".menu");
+
+function toggleDropdown(){
+
+  dropdownContainers.forEach(dropdownContainer =>{
+
+    const dropdownContainerHeader = dropdownContainer.querySelector(".dropdown-container-header");
+    const dropdown = dropdownContainer.querySelector(".dropdown");
+    const header = dropdownContainerHeader.querySelector("a");
+    const headerImg = dropdownContainerHeader.querySelector("img");
+
+    header.addEventListener("click", ()=>{
+
+      if(dropdown.style.display === "flex"){
+        dropdown.style.display = "none";
+        headerImg.classList.remove("active-button");
+      } else{
+        dropdown.style.display = "flex";
+      headerImg.classList.add("active-button");
+      }
+    });
+
+  });
+
+};
+
+function toggleMenu(){
+
+  if(menu.style.display === "flex"){
+    menu.style.display = "none"
+    closeButton.style.display = "none";
+    menuButton.style.display = "flex";
+  }else{
+    menu.style.display = "flex"
+    closeButton.style.display = "flex";
+    menuButton.style.display = "none";
+  }
+
+};
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  toggleDropdown();
+});
+
+[menuButton, closeButton].forEach(button =>{
+
+  button.addEventListener("click", toggleMenu);
+
+});

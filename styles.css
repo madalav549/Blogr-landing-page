@@ -112,9 +112,7 @@ header{
   border: black solid 1px;
 }
 
-.product-header,
-.company-header,
-.connect-header{
+.dropdown-container-header{
   display: flex;
   flex-direction: row;
   gap: 0.3rem;
@@ -122,19 +120,17 @@ header{
   justify-content: center;
 }
 
-.product-header a,
-.company-header a,
-.connect-header a{
+.dropdown-container-header a{
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: var(--font-family-1-weight-2);
-  color: var(--Blue-900)
+  color: var(--Blue-900);
+  cursor: pointer;
 }
 
-.product-header button,
-.company-header button,
-.connect-header button{
+.dropdown-container-header button{
   background-color: transparent;
+  cursor: pointer;
 }
 
 .active-button{
