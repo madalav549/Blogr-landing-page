@@ -50,7 +50,7 @@ body{
   background-color: var(--Red-550)
 }
 
-/*Header*/
+/*Header start*/
 
 header{
   width: 100%;
@@ -92,6 +92,8 @@ header{
   display: none;
 }
 
+/*Menu start*/
+
 .menu{
   display: flex;
   flex-direction: column;
@@ -109,7 +111,6 @@ header{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  border: black solid 1px;
 }
 
 .dropdown-container-header{
@@ -165,6 +166,44 @@ header{
   color: var(--Blue-900)
 }
 
+hr{
+  border-top: 0.15rem var(--Gray-600) solid;
+  margin-top: 1.5rem;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-buttons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.login{
+  color: var(--Purple-950);
+  font-size: 1.2rem;
+  font-family: var(--font-family-1);
+  font-weight: var(--font-family-1-weight-2);
+  background-color: transparent;
+}
+
+.sign-up{
+  color: var(--White);
+  font-family: var(--font-family-2);
+  font-weight: var(--font-family-2-weight-3);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  width: fit-content;
+  background: linear-gradient(to right, var(--Orange-300) 13%, var(--Red-550) 87%);
+}
+
+/*manu end*/
+
 .hero-header{
   display: flex;
   flex-direction: column;
@@ -219,3 +258,5 @@ header{
   background-color: transparent;
   border: 2px solid var(--White);
 }
+
+/*Header end*/
