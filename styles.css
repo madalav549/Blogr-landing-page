@@ -422,7 +422,8 @@ hr{
 
 .third-section .text-container div h3{
   font-size: 1.7rem;
-  color: var(--Blue-900)
+  color: var(--Blue-900);
+  letter-spacing: 0.1rem;
 }
 
 .third-section .text-container div p{
@@ -434,3 +435,55 @@ hr{
 }
 
 /*Third section end*/
+
+/*Main section end*/
+
+/*Footer section start*/
+
+footer{
+  background-color: var(--Gray-900);
+  background-color: var(--Purple-950);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  border-radius: 0 7rem 0 0;
+}
+
+.footer-logo{
+  width: 30%;
+  margin-bottom: 4rem;
+}
+
+footer article{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+footer article div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer article div strong{
+  color: var(--White);
+  font-size: 1.3rem;
+  font-weight: var(--font-family-1-weight-2);
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+
+footer article div div a{
+  text-decoration: none;
+  color: var(--Gray-600);
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*Footer section end*/
