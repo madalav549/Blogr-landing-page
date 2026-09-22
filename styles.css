@@ -36,7 +36,7 @@ html{
   font-size: 16px;
 }
 
-/*Mobile design*/
+/*Mobile design start*/
 
 body{
   font-family: var(--font-family-1);
@@ -487,3 +487,5 @@ footer article div div a{
 }
 
 /*Footer section end*/
+
+/*Mobile section end*/
