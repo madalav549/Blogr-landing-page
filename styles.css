@@ -387,3 +387,50 @@ hr{
 }
 
 /*Second section end*/
+
+/*Third section start*/
+
+.third-section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 1.5rem;
+}
+
+.third-section .image-container{
+  width: 100%;
+}
+
+.third-section-img-desktop{
+  display: none;
+}
+
+.third-section-img-mobile{
+  width: 130%;
+  margin-left: -15%;
+  margin-right: -15%;
+
+}
+
+.third-section .text-container,
+.third-section .text-container div{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.third-section .text-container div h3{
+  font-size: 1.7rem;
+  color: var(--Blue-900)
+}
+
+.third-section .text-container div p{
+  color: var(--Gray-600);
+  font-size: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Third section end*/
