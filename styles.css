@@ -331,3 +331,59 @@ hr{
 
 /*First section end*/
 
+/*Second section start*/
+
+.second-section{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.second-section::before{
+  content: "";
+  background-color: var(--Purple-950);
+  position: absolute;
+  height: 69%;
+  width: 100%;
+  z-index: -5;
+  bottom: 0;
+  border-radius: 0 5rem 0 5rem;
+  background-image: var(--bg-circles);
+  background-repeat: no-repeat;
+  background-size: 170%;
+  background-position: center -19rem;
+}
+
+.second-section .image-container{
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.second-section .image-container img{
+  width: 100%;
+}
+
+.second-section .text-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.second-section .text-container h2{
+  font-weight: var(--font-family-1-weight-2);
+  font-size: 2rem;
+  color: var(--White);
+}
+
+.second-section .text-container p{
+  font-size: 1.05rem;
+  color: var(--White);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Second section end*/
