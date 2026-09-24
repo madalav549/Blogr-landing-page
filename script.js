@@ -10,16 +10,20 @@ function toggleDropdown(){
     const dropdownContainerHeader = dropdownContainer.querySelector(".dropdown-container-header");
     const dropdown = dropdownContainer.querySelector(".dropdown");
     const header = dropdownContainerHeader.querySelector("a");
-    const headerImg = dropdownContainerHeader.querySelector("img");
+    const headerImgs = dropdownContainerHeader.querySelectorAll("img");
 
     header.addEventListener("click", ()=>{
 
       if(dropdown.style.display === "flex"){
         dropdown.style.display = "none";
-        headerImg.classList.remove("active-button");
+        headerImgs.forEach(img =>{
+          img.classList.remove("active-button")
+        })
       } else{
         dropdown.style.display = "flex";
-      headerImg.classList.add("active-button");
+        headerImgs.forEach(img =>{
+          img.classList.add("active-button")
+        })
       }
     });
 

@@ -1,4 +1,4 @@
-/*Setu up*/
+/*Set up*/
 
 :root{
   --font-family-1: Overpass;
@@ -36,7 +36,7 @@ html{
   font-size: 16px;
 }
 
-/*Mobile design start*/
+/*Mobile and tablet design start*/
 
 body{
   font-family: var(--font-family-1);
@@ -399,6 +399,7 @@ hr{
 
 .third-section .image-container{
   width: 100%;
+  overflow: hidden;
 }
 
 .third-section-img-desktop{
@@ -486,6 +487,138 @@ footer article div div a{
   text-align: center;
 }
 
+footer div{
+  color: white;
+  margin-top: 3rem;
+}
+
 /*Footer section end*/
 
-/*Mobile section end*/
+/*Mobile and Tablet design end*/
+
+/*Desktop design start*/
+
+@media screen and (min-width: 1024px){
+  
+  /*Header section start*/
+
+  header{
+    align-items: center;
+  }
+
+  .header-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 5rem;
+  }
+
+  .logo{
+    width: 7rem;
+  }
+
+  .header-content button{
+    display: none;
+  }
+
+  /*Menu start*/
+
+  .menu{
+    display: flex;
+    position: static;
+    background-color: transparent;
+    flex-direction: row;
+    padding: 0;
+    transform: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    display: 100%;
+  }
+
+  .navigation-links{
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .dropdown-container-header{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+  }
+
+  .dropdown-container-header a{
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: var(--font-family-1-weight-2);
+    color: var(--White);
+    cursor: pointer;
+  }
+
+  .dropdown-container-header a:hover{
+    text-decoration: underline
+  }
+
+  .dropdown-button-mobile{
+    display: none;
+  }
+
+  .dropdown-button-desktop{
+    display: block;
+  }
+
+  .dropdown-container{
+    position: relative;
+  }
+
+  .dropdown{
+    background-color: var(--White);
+    width: fit-content;
+    padding: 0;
+    padding: 1.5rem;
+    text-align: left;
+    padding-right: 3rem;
+    gap: 0.5rem;
+    position: absolute;
+  }
+
+  .dropdown a{
+    transition: 0.3s font-weight ease-in-out;
+  }
+
+  .dropdown a:hover{
+    font-weight: var(--font-family-1-weight-2);
+    cursor: pointer;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .auth-buttons{
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+  }
+
+  .login{
+    color: var(--White)
+  }
+
+  .sign-up{
+    background: var(--White);
+    color: var(--Red-500);
+    transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
+  }
+
+  .sign-up:hover{
+    background-color: var(--Red-400);
+    color: var(--White);
+    cursor: pointer;
+  }
+
+  /*Menu end*/
+
+}
