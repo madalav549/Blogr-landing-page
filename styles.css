@@ -509,8 +509,8 @@ footer div{
   .header-wrapper{
     display: flex;
     flex-direction: row;
-    width: 80%;
-    gap: 5rem;
+    width: 90%;
+    gap: 3rem;
   }
 
   .logo{
@@ -620,5 +620,48 @@ footer div{
   }
 
   /*Menu end*/
+
+  /*Hero header start*/
+
+  .hero-header{
+    margin: 0;
+    margin-top: 6.7rem;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+  .hero-header h1{
+    font-size: 3.5rem;
+    width: 100%;
+  }
+
+  .hero-header p{
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  .hero-cta-buttons{
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  .hero-cta-buttons button{
+    cursor: pointer;
+    transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+  }
+
+  .start-button:hover{
+    background-color: var(--Red-400);
+    color: var(--White);
+  }
+
+  .learn-more-button:hover{
+    background-color: var(--White);
+    color: var(--Red-400);
+  }
+
+  /*Hero header section end*/
+
+  /*Header end*/
 
 }
