@@ -504,6 +504,12 @@ footer div{
 
   header{
     align-items: center;
+    border-radius: 0 0 0 5rem;
+    background-color: var(--Orange-300);
+    background-image: var(--bg-desktop);
+    background-size: 250%;
+    background-position-x: 27%;
+    background-position-y: 50%;
   }
 
   .header-wrapper{
