@@ -152,7 +152,7 @@ header{
   gap: 1rem;
   width: 100%;
   margin-top: 1.5rem;
-  background-color: rgb(206, 205, 205);
+  background-color: rgb(247, 246, 246);
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -161,6 +161,7 @@ header{
   padding-bottom: 1.5rem;
   border-radius: 0.5rem;
   display: none;
+
 }
 
 .dropdown a{
@@ -757,5 +758,56 @@ footer div{
   /*First section end*/
 
   /*Second section start*/
+
+  .second-section{
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+    align-self: flex-end;
+    gap: 3rem;
+    padding-left: 5%;
+    margin-top: 3%;
+  }
+
+  .second-section::before{
+    width: 100%;
+    height: 70%;
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%, -17%);
+    border-radius: 0 7rem 0 7rem;
+    background:
+      var(--bg-circles),
+      linear-gradient(to right, var(--Purple-950) 40%, var(--Purple-900) 50%)
+    ;
+    background-repeat: no-repeat;
+    background-position: -60% 90%, center;
+  }
+
+  .second-section .image-container{
+    width: 100%;
+    margin: 0;
+  }
+
+  .second-section .text-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .second-section .text-container h2, .second-section .text-container p{
+    margin: 0;
+  }
+
+  .second-section .text-container p{
+    width: 87%;
+    line-height: 1.7;
+    color: hsla(0, 100%, 100%, 0.9)
+  }
+
+  /*Second section end*/
 
 }
