@@ -55,13 +55,16 @@ header{
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: var(--Red-500);
-  background-image: var(--bg-mobile);
-  background-size: 250%;
-  background-repeat: no-repeat;
-  background-position: center;
   padding-bottom: 5rem;
   border-radius: 0 0 0 7rem;
+    border-radius: 0 0 0 5rem;
+    background: 
+      var(--bg-mobile),
+      linear-gradient(135deg, var(--Orange-300) 10%, var(--Red-500) 50%)
+    ;
+    background-size: 250%, cover;
+    background-position: center;
+
 }
 
 .header-content{
