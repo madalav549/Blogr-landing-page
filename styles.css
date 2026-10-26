@@ -444,7 +444,6 @@ hr{
 
 footer{
   background-color: var(--Gray-900);
-  background-color: var(--Purple-950);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -483,12 +482,12 @@ footer article div strong{
 
 footer article div div a{
   text-decoration: none;
-  color: var(--Gray-600);
+  color: var(--White);
   font-size: 1rem;
   text-align: center;
 }
 
-footer div{
+footer > div{
   color: white;
   margin-top: 3rem;
 }
@@ -866,5 +865,64 @@ footer div{
 
   /*Third section end*/
 
+  /*Main section end*/
+
+  /*Footer section start*/
+
+
+  footer{
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 0 5rem 0 0;
+  }
+
+  .footer-logo{
+    margin: 0;
+    width: 9%;
+  }
+
+  footer > article{
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    gap: 10rem;
+  }
+
+  footer article > div{
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer article div strong{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  footer article div div a{
+    text-align: left;
+  }
+
+  footer article div div a:hover{
+    text-decoration: underline;
+  }
+
+
+  footer > div{
+    position: absolute;
+    bottom: 0;
+  }
+
+  /*Footer section done*/
 
 }
