@@ -810,4 +810,61 @@ footer div{
 
   /*Second section end*/
 
+  /*Third section start*/
+
+  .third-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+
+  .third-section > div {
+    flex: 1 1 50%;
+    padding: 0;
+    margin: 0;
+    padding-top: 10rem;
+    padding-bottom: 13rem;
+  }
+
+  .third-section .image-container{
+    position: relative;
+  }
+
+  .third-section-img-mobile{
+    display: none;
+  }
+
+  .third-section-img-desktop{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -41%;
+  }
+
+  .third-section .text-container{
+    gap: 4rem;
+    padding-left: 3rem;
+  }
+
+  .third-section .text-container div{
+    text-align: left;
+  }
+
+  .third-section .text-container div h3{
+    font-size: 1.9rem;
+  }
+
+  .third-section .text-container div p{
+    margin: 0;
+    width: 90%;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+
+  /*Third section end*/
+
+
 }
