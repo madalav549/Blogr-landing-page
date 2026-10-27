@@ -86,7 +86,7 @@ header{
 }
 
 .close-button{
-  display: flex;
+  display: none;
   width: fit-content
 }
 
@@ -96,7 +96,7 @@ header{
 }
 
 .menu-button{
-  display: none;
+  display: flex;
 }
 
 /*Menu start*/
